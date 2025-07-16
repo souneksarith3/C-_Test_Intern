@@ -37,7 +37,7 @@ namespace C__Test
                 adp = new SqlDataAdapter(cmd);
                 DataSet ds = new DataSet();
                 adp.Fill(ds, "SelectDateRange");
-                //ds.Tables.Add(dt);
+
                 if (ds.Tables != null)
                 {
                     report.DataSource = ds;
